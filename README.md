@@ -15,11 +15,11 @@
 
 ### package.json
 
-scripts{
+scripts {   
 `"dev": "parcel src/index.html",`   
 `"build": "parcel build src/index.html --public-url /repository_name/",`  
 `"deploy": "gh-pages -d dist",`  
 `"predeploy": "npm run build"`  
-}
+}   
 `"homepage": "https://name.github.io/repository_name/",`
 
