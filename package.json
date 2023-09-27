@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/lordponchik/ex.Tripgoal/issues"
   },
-  "homepage": "https://github.com/lordponchik/ex.Tripgoal#readme",
+  "homepage": "https://github.com/lordponchik/ex.Tripgoal",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   }
