@@ -1,0 +1,53 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  background-color: $secondary-background-color;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__wrapper {
+  position: relative;
+}
+.hero__thumb {
+  width: 380px;
+
+  border: 10px solid $secondary-text-color;
+  border-radius: 570px;
+  overflow: hidden;
+
+  &--pool {
+    width: 300px;
+    position: absolute;
+    right: -25%;
+    bottom: -10%;
+  }
+}
+
+.hero .hero__description {
+  width: 450px;
+}
+.hero__subtitle {
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  line-height: 1.13;
+
+  color: $secondary-accent-color;
+}
+.hero__title {
+  margin-bottom: 20px;
+
+  font-family: "BioRhyme", serif;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+
+  color: $header-color;
+}
+.hero__text {
+  margin-bottom: 50px;
+}
