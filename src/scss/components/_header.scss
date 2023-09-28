@@ -1,11 +1,12 @@
+.header {
+  background-color: $secondary-background-color;
+}
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-
-  background-color: $secondary-background-color;
 }
 .nav__list {
   display: flex;

@@ -1,0 +1,57 @@
+.find-travel {
+  padding-top: 190px;
+  padding-bottom: 120px;
+}
+.find-travel__wrapper {
+  text-align: center;
+}
+.find-travel__subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  line-height: 1.13;
+
+  color: $secondary-accent-color;
+}
+.find-travel__title {
+  margin-bottom: 20px;
+
+  font-family: $secondary-font-title;
+  font-size: 42px;
+  line-height: 1.24;
+
+  color: $header-color;
+}
+.find-travel__text {
+  margin: 0 auto 70px;
+  width: 550px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.steps__item {
+  display: grid;
+  grid-template-rows: 115px 1fr 1fr;
+  align-items: stretch;
+  justify-items: center;
+  padding: 40px 20px 45px;
+  border: 2px solid $secondary-background-color;
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.steps__title {
+  align-self: baseline;
+  padding-top: 50px;
+
+  font-size: 18px;
+  line-height: 1.4;
+
+  color: $header-color;
+}
+.steps__description {
+  padding-top: 20px;
+}
