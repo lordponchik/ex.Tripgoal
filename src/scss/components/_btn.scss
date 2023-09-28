@@ -1,0 +1,19 @@
+.btn {
+  min-width: 120px;
+  padding: 16px 29px;
+
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: 1px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+  color: $secondary-text-color;
+  background-color: $primary-accent-color;
+
+  &:hover,
+  &focus {
+    background-color: $secondary-accent-color;
+  }
+}

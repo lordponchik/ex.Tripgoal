@@ -1,13 +1,25 @@
 @import "~node_modules/modern-normalize/modern-normalize";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   // font-family: "BioRhyme", serif;
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
-  background-color: var($primary-background-color);
-  color: var($primary-text-color);
+  background-color: $primary-background-color;
+  color: $primary-text-color;
 }
 .list {
   list-style: none;
