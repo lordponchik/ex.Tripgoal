@@ -1,0 +1,115 @@
+.sug-loc {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: $secondary-background-color;
+}
+.sug-loc__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.sug-loc__description {
+  width: 530px;
+}
+.sug-loc__subtitle {
+  margin-bottom: 10px;
+
+  line-height: 1.13;
+
+  color: $secondary-accent-color;
+}
+.sug-loc__title {
+  margin-bottom: 20px;
+
+  font-family: $secondary-font-title;
+  font-size: 42px;
+  line-height: 1.24;
+
+  color: $header-color;
+}
+.sug-loc__buttons {
+  align-self: flex-end;
+}
+.sug-loc__btn {
+  width: 50px;
+  max-width: 50px;
+  min-width: 0;
+  height: 50px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: $header-color;
+  background-color: $primary-background-color;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &--active {
+    fill: $primary-background-color;
+    background-color: $primary-accent-color;
+  }
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location__item {
+  position: relative;
+  display: block;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:first-child .location__wrapper {
+    background-color: rgba($color: #656a1e, $alpha: 0.3);
+  }
+}
+.location__img {
+  border: 6px solid $primary-background-color;
+  border-radius: 15px;
+}
+.location__wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  border: 1px solid #989898;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba($color: #002248, $alpha: 0.3);
+}
+.loc-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.loc-meta__title {
+  font-weight: 400;
+  font-size: 17px;
+
+  color: $primary-background-color;
+}
+.loc-meta__country {
+  font-size: 15px;
+
+  color: $primary-background-color;
+}
+.loc-meta__price {
+  font-family: $secondary-font-title;
+  font-size: 15px;
+  text-align: end;
+
+  color: $primary-background-color;
+}
