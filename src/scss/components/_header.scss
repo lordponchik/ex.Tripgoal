@@ -41,11 +41,12 @@
 
   color: $header-color;
 
+  &--active {
+    color: $primary-accent-color;
+  }
+
   &:hover,
   &:focus {
     color: $primary-accent-color;
   }
-}
-.nav__link--active {
-  color: $primary-accent-color;
 }
