@@ -6,20 +6,19 @@
 
 ### Parceljs
 
-  * npm init -y
-  * npm install parcel-bundler -D
-    
+- npm init -y
+- npm install parcel-bundler -D
+
 ### Parceljs + deploy auf Github
 
-  * npm install gh-pages
+- npm install gh-pages
 
 ### package.json
 
-scripts {   
-`"dev": "parcel src/index.html",`   
-`"build": "parcel build src/index.html --public-url /repository_name/",`  
+scripts {  
+`"dev": "parcel src/index.html",`  
+`"build": "parcel build src/index.html --no-minify --public-url /repository_name/",`  
 `"deploy": "gh-pages -d dist",`  
 `"predeploy": "npm run build"`  
-}   
+}  
 `"homepage": "https://name.github.io/repository_name/",`
-
