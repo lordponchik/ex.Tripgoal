@@ -576,7 +576,7 @@ img {
 .guideline {
   position: relative;
   height: 690px;
-  background: url("/map.1cb1e9b8.svg") no-repeat 145%, url("/travel-guideline.ae44267a.jpg") no-repeat;
+  background: url("/ex.Tripgoal/map.adc9c27f.svg") no-repeat 145%, url("/ex.Tripgoal/travel-guideline.7e02cd10.jpg") no-repeat;
 }
 
 .guideline__wrapper {
@@ -719,7 +719,7 @@ img {
   display: flex;
   align-items: center;
   height: 550px;
-  background-image: url("/map-world.85ccb6c4.svg");
+  background-image: url("/ex.Tripgoal/map-world.28bf67ae.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 95%;
@@ -821,4 +821,4 @@ img {
   right: -30%;
 }
 
-/*# sourceMappingURL=/scss.6b84482b.css.map */
+/*# sourceMappingURL=/ex.Tripgoal/scss.24028d7b.css.map */

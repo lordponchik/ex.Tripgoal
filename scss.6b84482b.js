@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../image/map.svg":[["map.1cb1e9b8.svg","image/map.svg"],"image/map.svg"],"./../image/travel-guideline.jpg":[["travel-guideline.ae44267a.jpg","image/travel-guideline.jpg"],"image/travel-guideline.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../image/map.svg":[["map.1cb1e9b8.svg","image/map.svg"],"image/map.svg"],"./../image/travel-guideline.jpg":[["travel-guideline.ae44267a.jpg","image/travel-guideline.jpg"],"image/travel-guideline.jpg"],"./../image/testimonials/map-world.svg":[["map-world.85ccb6c4.svg","image/testimonials/map-world.svg"],"image/testimonials/map-world.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52148" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52939" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
