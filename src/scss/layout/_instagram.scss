@@ -1,0 +1,47 @@
+.instagramm {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.instagramm__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 70px;
+}
+.instagramm__subtitle {
+  margin-bottom: 10px;
+
+  line-height: 1.13;
+
+  color: $secondary-accent-color;
+}
+.instagramm__title {
+  font-family: $secondary-font-title;
+  font-size: 30px;
+  line-height: 1.24;
+
+  color: $header-color;
+}
+.instagramm__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instagramm__item:nth-child(2n) {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.instagramm__item:nth-child(2n + 1) {
+  border-radius: 570px;
+  overflow: hidden;
+
+  &:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  &:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
