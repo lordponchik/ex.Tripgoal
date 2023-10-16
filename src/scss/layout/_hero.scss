@@ -59,10 +59,11 @@
   left: 50%;
   transform: translate(-50%, 50%);
 
+  display: flex;
   width: 70%;
-  height: 155px;
-
+  height: 120px;
   border-radius: 30px;
+  overflow: hidden;
 
   background-color: #fcfcfc;
   -webkit-box-shadow: 0px 40px 30px 0px rgba(0, 34, 72, 0.07);
@@ -72,31 +73,67 @@
   display: flex;
   width: auto;
   height: 100%;
+  margin-left: 70px;
   justify-content: space-evenly;
   align-items: center;
 }
 .booking-list__item {
-  position: relative;
   display: inline-flex;
   flex-direction: column;
+
+  &:not(:last-child) {
+    margin-right: 120px;
+  }
+}
+.booking-list__label {
+  position: relative;
+
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -1px;
+
+  color: $header-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -30px;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../image/chevron-down.svg);
+    background-repeat: no-repeat;
+  }
 }
 .booking-list__select {
   appearance: none;
   border: none;
+
+  color: $primary-text-color;
 }
 
-.booking-list__item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: -20px;
+.booking__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-style: none;
 
-  width: 10px;
-  height: 10px;
-
-  background-color: aqua;
-
-  &:hover .booking-list_select:active {
-    border: 1px solid black;
-  }
+  color: $primary-background-color;
+  background-color: $primary-accent-color;
+}
+.booking__btn-svg {
+  margin-bottom: 15px;
+  fill: $primary-background-color;
+}
+.booking__btn-text {
+  font-size: 18px;
+  font-weight: 500;
 }

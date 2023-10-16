@@ -73,7 +73,7 @@
         <div class="booking">
           <ul class="booking-list list">
             <li class="booking-list__item">
-              <label for="location">Location</label>
+              <label for="location" class="booking-list__label">Location</label>
               <select
                 name="Location"
                 id="location"
@@ -84,7 +84,9 @@
               </select>
             </li>
             <li class="booking-list__item">
-              <label for="category">Your Category</label>
+              <label for="category" class="booking-list__label"
+                >Your Category</label
+              >
               <select
                 name="Category"
                 id="category"
@@ -95,7 +97,9 @@
               </select>
             </li>
             <li class="booking-list__item">
-              <label for="total">Total Person</label>
+              <label for="total" class="booking-list__label"
+                >Total Person</label
+              >
               <select
                 name="Total Person"
                 id="total"
@@ -109,6 +113,12 @@
               </select>
             </li>
           </ul>
+          <button type="button" class="booking__btn">
+            <svg width="22" height="24" class="booking__btn-svg">
+              <use href="./image/sprite.svg#icon-planer"></use>
+            </svg>
+            <p class="booking__btn-text">Book Now</p>
+          </button>
         </div>
       </section>
       <section class="find-travel">
