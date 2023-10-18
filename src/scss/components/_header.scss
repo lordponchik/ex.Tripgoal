@@ -85,11 +85,14 @@
     display: none;
   }
 }
+
 .mob-menu__open {
+  display: none;
+
   stroke: $primary-accent-color;
 
-  &.toggle {
-    display: none;
+  &.visible {
+    display: block;
   }
 }
 .mob-menu__close {
@@ -97,7 +100,7 @@
 
   stroke: $primary-accent-color;
 
-  &.toggle {
+  &.visible {
     display: block;
   }
 }
