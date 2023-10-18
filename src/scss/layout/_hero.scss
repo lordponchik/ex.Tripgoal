@@ -7,30 +7,59 @@
   background-color: $secondary-background-color;
 }
 .hero__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .hero__wrapper {
   position: relative;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 20px;
+  }
 }
 .hero__thumb {
-  width: 380px;
-
   border: 10px solid $secondary-text-color;
   border-radius: 570px;
   overflow: hidden;
 
   &--pool {
-    width: 300px;
     position: absolute;
     right: -25%;
     bottom: -10%;
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 300px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      right: -2%;
+      bottom: -5%;
+    }
+  }
+
+  &--mountains {
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 380px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin: 0 auto;
+    }
   }
 }
 
 .hero .hero__description {
-  width: 450px;
+  @media screen and (min-width: 1280px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    text-align: center;
+  }
 }
 .hero__subtitle {
   margin-bottom: 15px;
