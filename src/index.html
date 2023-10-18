@@ -20,6 +20,18 @@
           ><span class="logo__1">Trip</span><span class="logo__2">Goal</span
           ><span class="logo__3"></span
         ></a>
+        <button class="mob-menu">
+          <svg class="mob-menu__svg" width="20" height="15">
+            <use
+              href="./image/sprite.svg#icon-menu-open"
+              class="mob-menu__open visible"
+            ></use>
+            <use
+              href="./image/sprite.svg#icon-menu-close"
+              class="mob-menu__close"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -39,12 +51,31 @@
         </nav>
         <button type="button" class="btn">Register</button>
       </div>
+      <nav class="mob-nav">
+        <ul class="mob-nav__list list">
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link mob-nav__link--active link">Home</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">About</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">Packages</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">Contact Us</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__wrapper">
-            <div class="hero__thumb">
+            <div class="hero__thumb hero__thumb--mountains">
               <img
                 src="./image/hover/mountains.jpg"
                 alt="mountains"
@@ -172,6 +203,7 @@
           </div>
         </div>
       </section>
+      <!-- 
       <section class="sug-loc">
         <div class="container">
           <div class="sug-loc__wrapper">
@@ -526,8 +558,9 @@
           </div>
         </div>
       </section>
+      -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a href="" class="logo link"
@@ -583,6 +616,8 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer>  -->
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
