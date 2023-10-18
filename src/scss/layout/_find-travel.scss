@@ -24,11 +24,25 @@
 }
 .find-travel__text {
   margin: 0 auto 70px;
-  width: 550px;
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+  }
 }
 .steps {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    grid-template-areas:
+      "f f f f i i i i"
+      "b b b b b b b b";
+    gap: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: grid;
+  }
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+  }
 }
 .steps__item {
   display: grid;
@@ -39,10 +53,29 @@
   border: 2px solid $secondary-background-color;
   border-radius: 10px;
 
-  &:not(:last-child) {
-    margin-right: 15px;
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  // @media screen and (min-width: 768px) {
+  //   &:not(:last-child) {
+  //     margin-right: 15px;
+  //   }
+  // }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .steps__item:first-child {
+    grid-area: f;
+  }
+  .steps__item:nth-child(2) {
+    grid-area: i;
+  }
+  .steps__item:last-child {
+    grid-area: b;
   }
 }
+
 .steps__title {
   align-self: baseline;
   padding-top: 50px;
