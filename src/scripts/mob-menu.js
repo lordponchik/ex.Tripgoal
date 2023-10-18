@@ -18,8 +18,11 @@ documentEl.mobMenuBtn.addEventListener("click", () => {
 window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
   if (!e.matches) return;
 
+  if (documentEl.mobMenu.classList.contains("open")) {
+    documentEl.mobMenuOpenSVG.classList.toggle("visible");
+    documentEl.mobMenuCloseSVG.classList.toggle("visible");
+  }
+
   documentEl.mobMenu.classList.remove("open");
   document.body.style.removeProperty("overflow");
-  documentEl.mobMenuOpenSVG.classList.toggle("visible");
-  documentEl.mobMenuCloseSVG.classList.toggle("visible");
 });
