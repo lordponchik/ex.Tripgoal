@@ -7,6 +7,21 @@
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-wrap: wrap;
+  }
+}
+.nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    order: 1;
+    margin: 15px auto 0;
+  }
 }
 .nav__list {
   display: flex;
@@ -14,8 +29,12 @@
   justify-content: space-between;
 }
 .logo {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 25px;
+  }
 }
 .logo__1 {
   color: $primary-accent-color;
@@ -50,4 +69,69 @@
   &:focus {
     color: $primary-accent-color;
   }
+}
+.mob-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+
+  border-style: none;
+  border-radius: 8px;
+  background-color: $primary-accent-color;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mob-menu__open {
+  stroke: $primary-accent-color;
+
+  &.toggle {
+    display: none;
+  }
+}
+.mob-menu__close {
+  display: none;
+
+  stroke: $primary-accent-color;
+
+  &.toggle {
+    display: block;
+  }
+}
+.mob-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  height: 100vh;
+  transform: translateY(-100%);
+
+  background-color: $secondary-background-color;
+
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mob-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+  padding: 120px 50px;
+}
+.mob-nav__link--active {
+  color: $primary-accent-color;
 }
