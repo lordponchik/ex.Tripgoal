@@ -8,12 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/ex.Tripgoal/scss.891dc383.css">
+    <link rel="stylesheet" href="/ex.Tripgoal/scss.b8e74116.css">
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a href="" class="logo link"><span class="logo__1">Trip</span><span class="logo__2">Goal</span><span class="logo__3"></span></a>
+        <button class="mob-menu">
+          <svg class="mob-menu__svg" width="20" height="15">
+            <use href="/ex.Tripgoal/sprite.afd2c28e.svg#icon-menu-open" class="mob-menu__open visible"></use>
+            <use href="/ex.Tripgoal/sprite.afd2c28e.svg#icon-menu-close" class="mob-menu__close"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -33,12 +39,31 @@
         </nav>
         <button type="button" class="btn">Register</button>
       </div>
+      <nav class="mob-nav">
+        <ul class="mob-nav__list list">
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link mob-nav__link--active link">Home</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">About</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">Packages</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">Contact Us</a>
+          </li>
+          <li class="mob-nav__item">
+            <a href="" class="mob-nav__link link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__wrapper">
-            <div class="hero__thumb">
+            <div class="hero__thumb hero__thumb--mountains">
               <img src="/ex.Tripgoal/mountains.fdc554ce.jpg" alt="mountains" class="hero__img--mountains">
             </div>
             <div class="hero__thumb hero__thumb--pool">
@@ -85,7 +110,7 @@
           </ul>
           <button type="button" class="booking__btn">
             <svg width="22" height="24" class="booking__btn-svg">
-              <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-planer"></use>
+              <use href="/ex.Tripgoal/sprite.afd2c28e.svg#icon-planer"></use>
             </svg>
             <p class="booking__btn-text">Book Now</p>
           </button>
@@ -127,6 +152,7 @@
           </div>
         </div>
       </section>
+      <!-- 
       <section class="sug-loc">
         <div class="container">
           <div class="sug-loc__wrapper">
@@ -142,19 +168,27 @@
             <div class="sug-loc__buttons">
               <button type="button" class="btn sug-loc__btn">
                 <svg width="15" height="25">
-                  <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-arrow-left"></use>
+                  <use href="./image/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button type="button" class="btn sug-loc__btn sug-loc__btn--active">
+              <button
+                type="button"
+                class="btn sug-loc__btn sug-loc__btn--active"
+              >
                 <svg width="15" height="25">
-                  <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-arrow-right"></use>
+                  <use href="./image/sprite.svg#icon-arrow-right"></use>
                 </svg>
               </button>
             </div>
           </div>
           <ul class="location list">
             <li class="location__item">
-              <a href="" class="location__link link"><img src="/ex.Tripgoal/bali-handara-gate.7e9b4755.jpg" alt="" class="location__img">
+              <a href="" class="location__link link"
+                ><img
+                  src="./image/suggested-location/bali-handara-gate.jpg"
+                  alt=""
+                  class="location__img"
+                />
                 <div class="location__wrapper">
                   <ul class="loc-meta list">
                     <li class="loc-meta__item">
@@ -168,19 +202,19 @@
                     <li class="loc-meta__item">
                       <div class="rating">
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                       </div>
                     </li>
@@ -192,7 +226,12 @@
               </a>
             </li>
             <li class="location__item">
-              <a href="" class="location__link link"><img src="/ex.Tripgoal/buddhist-shrine.40ba7c35.jpg" alt="" class="location__img">
+              <a href="" class="location__link link"
+                ><img
+                  src="./image/suggested-location/buddhist-shrine.jpg"
+                  alt=""
+                  class="location__img"
+                />
                 <div class="location__wrapper">
                   <ul class="loc-meta list">
                     <li class="loc-meta__item">
@@ -206,19 +245,19 @@
                     <li class="loc-meta__item">
                       <div class="rating">
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                       </div>
                     </li>
@@ -230,7 +269,12 @@
               </a>
             </li>
             <li class="location__item">
-              <a href="" class="location__link link"><img src="/ex.Tripgoal/rialto-bridge.293131c8.jpg" alt="" class="location__img">
+              <a href="" class="location__link link"
+                ><img
+                  src="./image/suggested-location/rialto-bridge.jpg"
+                  alt=""
+                  class="location__img"
+                />
                 <div class="location__wrapper">
                   <ul class="loc-meta list">
                     <li class="loc-meta__item">
@@ -244,19 +288,19 @@
                     <li class="loc-meta__item">
                       <div class="rating">
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                         <svg width="13" height="13" class="rating__star">
-                          <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-rating"></use>
+                          <use href="./image/sprite.svg#icon-rating"></use>
                         </svg>
                       </div>
                     </li>
@@ -320,10 +364,18 @@
           </div>
           <div class="perfect-place__wrapper">
             <div class="perfect-place__thumb">
-              <img src="/ex.Tripgoal/city.98117b91.jpg" alt="" class="perfect-place__img">
+              <img
+                src="./image/perfect-travel-place/city.jpg"
+                alt=""
+                class="perfect-place__img"
+              />
             </div>
             <div class="perfect-place__thumb perfect-place__thumb--room">
-              <img src="/ex.Tripgoal/room.13f71325.jpg" alt="" class="perfect-place__img">
+              <img
+                src="./image/perfect-travel-place/room.jpg"
+                alt=""
+                class="perfect-place__img"
+              />
             </div>
           </div>
         </div>
@@ -341,33 +393,33 @@
           <div class="testimonials__wrapper">
             <ul class="participants list">
               <li class="participants__item">
-                <img src="/ex.Tripgoal/georgina-carr.a1204699.jpg" alt="">
+                <img src="./image/testimonials/georgina-carr.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/buck-gallagher.c415be9b.jpg" alt="">
+                <img src="./image/testimonials/buck-gallagher.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/agnes-dalton.5fb2c107.jpg" alt="">
+                <img src="./image/testimonials/agnes-dalton.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/jeffry-johns.445ff1b5.jpg" alt="">
+                <img src="./image/testimonials/jeffry-johns.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/joan-underwood.672ecaeb.jpg" alt="">
+                <img src="./image/testimonials/joan-underwood.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/chad-wilson.2982ac80.jpg" alt="">
+                <img src="./image/testimonials/chad-wilson.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/michael-small.54aa939c.jpg" alt="">
+                <img src="./image/testimonials/michael-small.jpg" alt="" />
               </li>
               <li class="participants__item">
-                <img src="/ex.Tripgoal/shana-henry.d61679f6.jpg" alt="">
+                <img src="./image/testimonials/shana-henry.jpg" alt="" />
               </li>
             </ul>
             <div class="review">
               <svg width="30" height="30" class="review__svg">
-                <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-quotation"></use>
+                <use href="./image/sprite.svg#icon-quotation"></use>
               </svg>
               <p class="review__text">
                 I have traveled and explored several destinations using this
@@ -385,7 +437,7 @@
           <div class="instagramm__description">
             <p class="instagramm__subtitle">Social Feed</p>
             <h2 class="instagramm__title">
-              Check Our Instagram <br>
+              Check Our Instagram <br />
               Profile
             </h2>
           </div>
@@ -394,19 +446,49 @@
         <div class="instagram__wrapper">
           <ul class="instagramm__list list">
             <li class="instagramm__item">
-              <img src="/ex.Tripgoal/insm_1.98117b91.jpg" alt="" class="instagramm__img" height="300" width="400">
+              <img
+                src="./image/instagram-profile/insm_1.jpg"
+                alt=""
+                class="instagramm__img"
+                height="300"
+                width="400"
+              />
             </li>
             <li class="instagramm__item">
-              <img src="/ex.Tripgoal/insm_2.b4b43cc8.jpg" alt="" class="instagramm__img" height="300" width="400">
+              <img
+                src="./image/instagram-profile/insm_2.jpg"
+                alt=""
+                class="instagramm__img"
+                height="300"
+                width="400"
+              />
             </li>
             <li class="instagramm__item">
-              <img src="/ex.Tripgoal/insm_3.b950867b.jpg" alt="" class="instagramm__img" height="300" width="400">
+              <img
+                src="./image/instagram-profile/insm_3.jpg"
+                alt=""
+                class="instagramm__img"
+                height="300"
+                width="400"
+              />
             </li>
             <li class="instagramm__item">
-              <img src="/ex.Tripgoal/insm_4.fea6a8d6.jpg" alt="" class="instagramm__img" height="300" width="400">
+              <img
+                src="./image/instagram-profile/insm_4.jpg"
+                alt=""
+                class="instagramm__img"
+                height="300"
+                width="400"
+              />
             </li>
             <li class="instagramm__item">
-              <img src="/ex.Tripgoal/insm_5.13f71325.jpg" alt="" class="instagramm__img" height="300" width="400">
+              <img
+                src="./image/instagram-profile/insm_5.jpg"
+                alt=""
+                class="instagramm__img"
+                height="300"
+                width="400"
+              />
             </li>
           </ul>
         </div>
@@ -417,7 +499,7 @@
             <div class="contact__description">
               <p class="contact__subtitle">Contact Us</p>
               <h2 class="contact__title">
-                Do You Have Any <br>
+                Do You Have Any <br />
                 Questions?
               </h2>
               <button type="button" class="btn">Contact Us</button>
@@ -425,11 +507,15 @@
           </div>
         </div>
       </section>
+      -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a href="" class="logo link"><span class="logo__1">Trip</span><span class="logo__2">Goal</span><span class="logo__3"></span></a>
+          <a href="" class="logo link"
+            ><span class="logo__1">Trip</span><span class="logo__2">Goal</span
+            ><span class="logo__3"></span
+          ></a>
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
@@ -453,21 +539,21 @@
             <li class="social__item">
               <a href="" class="social__link link">
                 <svg class="social__svg" width="16" height="16">
-                  <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-facebook"></use>
+                  <use href="./image/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="" class="social__link link">
                 <svg class="social__svg" width="16" height="16">
-                  <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-instagram"></use>
+                  <use href="./image/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="" class="social__link link">
                 <svg class="social__svg" width="18" height="18">
-                  <use href="/ex.Tripgoal/sprite.ba466d5d.svg#icon-pinterest"></use>
+                  <use href="./image/sprite.svg#icon-pinterest"></use>
                 </svg>
               </a>
             </li>
@@ -479,6 +565,8 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer>  -->
+
+    <script src="/ex.Tripgoal/src.a1beb0c6.js" type="module"></script>
   </body>
 </html>
