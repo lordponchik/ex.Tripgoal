@@ -1,12 +1,16 @@
 .perfect-place__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .perfect-place__description {
-  width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 .perfect-place__subtitle {
   margin-bottom: 10px;
@@ -35,10 +39,13 @@
   &:not(:last-child) {
     margin-bottom: 25px;
   }
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 .statistics__item {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 120px;
+  max-width: 120px;
   min-height: 130px;
   padding: 15px;
   display: flex;
@@ -48,6 +55,11 @@
 
   border: 2px solid $secondary-background-color;
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 150px;
+    max-width: 150px;
+  }
 }
 .statistics__value {
   font-family: $secondary-font-title;
@@ -57,25 +69,44 @@
   color: $primary-accent-color;
 }
 .statistics__title {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
 
   color: $header-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 .perfect-place__wrapper {
   position: relative;
 }
 .perfect-place__thumb {
-  width: 400px;
-
   border: 10px solid $primary-background-color;
   border-radius: 570px;
   overflow: hidden;
 
   &--room {
+    display: none;
+
     position: absolute;
     left: -40%;
     bottom: -5%;
     width: 320px;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+  }
+
+  &--city {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 400px;
+    }
   }
 }
