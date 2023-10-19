@@ -1,14 +1,25 @@
 .guideline {
   position: relative;
+
+  display: none;
   height: 690px;
 
-  background: url("../image/map.svg") no-repeat 145%,
+  background: url("../image/map.svg") no-repeat 50%,
     url("../image/travel-guideline.jpg") no-repeat;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+.guideline__container {
+  padding-top: 175px;
 }
 .guideline__wrapper {
-  width: 440px;
-  padding-top: 175px;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 440px;
+  }
 }
 .guideline__subtitle {
   margin-bottom: 10px;
