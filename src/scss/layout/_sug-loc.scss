@@ -98,8 +98,8 @@
   left: 50%;
   right: 50%;
   transform: translate(-50%, 0);
+  width: 100%;
 
-  width: 80%;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -109,6 +109,10 @@
   border-radius: 15px;
   backdrop-filter: blur(5px);
   background-color: rgba($color: #002248, $alpha: 0.3);
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
 }
 .loc-meta {
   display: flex;
