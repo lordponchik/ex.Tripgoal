@@ -664,7 +664,7 @@ img {
   right: 10%;
   width: 16px;
   height: 16px;
-  background-image: url(/chevron-down.d6648fc9.svg);
+  background-image: url(/ex.Tripgoal/chevron-down.b461b39d.svg);
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 480px) {
@@ -957,7 +957,7 @@ img {
   position: relative;
   display: none;
   height: 690px;
-  background: url("/map.1cb1e9b8.svg") no-repeat 50%, url("/travel-guideline.ae44267a.jpg") no-repeat;
+  background: url("/ex.Tripgoal/map.adc9c27f.svg") no-repeat 50%, url("/ex.Tripgoal/travel-guideline.7e02cd10.jpg") no-repeat;
 }
 @media screen and (min-width: 1280px) {
   .guideline {
@@ -1151,7 +1151,7 @@ img {
   display: flex;
   align-items: center;
   height: 550px;
-  background-image: url("/map-world.85ccb6c4.svg");
+  background-image: url("/ex.Tripgoal/map-world.28bf67ae.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 95%;
@@ -1348,7 +1348,7 @@ img {
   height: 400px;
   padding: 10px;
   border-radius: 40px;
-  background-image: url(/contact-us.1aeac65e.png);
+  background-image: url(/ex.Tripgoal/contact-us.8f8be44c.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #f3f8ff;
@@ -1468,4 +1468,4 @@ img {
   text-align: center;
 }
 
-/*# sourceMappingURL=/src.e31bb0bc.css.map */
+/*# sourceMappingURL=/ex.Tripgoal/src.40aa10bf.css.map */
