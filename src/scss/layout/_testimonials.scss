@@ -3,14 +3,13 @@
   padding-bottom: 120px;
   background-color: $secondary-background-color;
 }
-.testimonials__container {
-  padding-left: 125px;
-  padding-right: 125px;
-}
 .testimonials__description {
-  width: 590px;
-  margin: 0 auto;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    width: 590px;
+    margin: 0 auto;
+  }
 }
 .testimonials__subtitle {
   margin-bottom: 10px;
@@ -41,9 +40,15 @@
   background-size: 95%;
 }
 .participants {
+  position: absolute;
+
   width: 100%;
   height: 100%;
-  position: absolute;
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 .review {
   display: flex;
