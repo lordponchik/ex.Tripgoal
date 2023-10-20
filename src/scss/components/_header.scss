@@ -138,6 +138,17 @@
   height: 80vh;
   padding: 120px 50px;
 }
-.mob-nav__link--active {
-  color: $primary-accent-color;
+.mob-nav__link {
+  line-height: 1.13;
+
+  color: $header-color;
+
+  &--active {
+    color: $primary-accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
 }
