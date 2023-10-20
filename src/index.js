@@ -1,2 +1,3 @@
 import "./scss/index.scss";
-import "./scripts/mob-menu.js";
+import "./scripts/mob-menu";
+import "./scripts/instagram";
