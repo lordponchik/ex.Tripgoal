@@ -47,10 +47,6 @@
     width: 120%;
   }
 }
-
-.instagramm__item:first-child .instagramm__img {
-  width: 385px;
-}
 .instagramm__item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;

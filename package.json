@@ -28,6 +28,7 @@
   "dependencies": {
     "gh-pages": "^6.0.0",
     "modern-normalize": "^2.0.0",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "swiper": "^10.3.1"
   }
 }
