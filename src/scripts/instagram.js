@@ -9,32 +9,9 @@ import "swiper/modules/navigation.css";
 const instagrammListEl = document.querySelector(".instagram__wrapper");
 
 if (window.innerWidth >= 768) {
-  const instagramUlEl = document.createElement("ul");
-  instagramUlEl.classList.add("instagramm__list");
-  instagramUlEl.classList.add("list");
-
-  instagrammListEl.append(instagramUlEl);
-  instagramUlEl.innerHTML = instRenderTab(instagramData);
+  instChangeSizeTab();
 } else if (window.innerWidth < 768) {
-  instagrammListEl.innerHTML = `<div class="swiper">
-  <div class="swiper-wrapper"></div>
-   <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  </div>`;
-
-  const swiperEl = document.querySelector(".swiper-wrapper");
-
-  swiperEl.innerHTML = instRenderMob(instagramData);
-
-  const swiper = new Swiper(".swiper", {
-    modules: [Navigation],
-    direction: "horizontal",
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  instChangeSizeMob();
 }
 
 function instRenderTab(data) {
@@ -68,24 +45,43 @@ function instRenderMob(data) {
     })
     .join("");
 }
-{
-  /* <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
+function instChangeSizeMob() {
+  instagrammListEl.innerHTML = `<div class="swiper">
+  <div class="swiper-wrapper"></div>
+   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+  </div>`;
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div> */
+  const swiperEl = document.querySelector(".swiper-wrapper");
+
+  swiperEl.innerHTML = instRenderMob(instagramData);
+
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation],
+    direction: "horizontal",
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }
+function instChangeSizeTab() {
+  const instagramUlEl = document.createElement("ul");
+  instagramUlEl.classList.add("instagramm__list");
+  instagramUlEl.classList.add("list");
+
+  instagrammListEl.append(instagramUlEl);
+  instagramUlEl.innerHTML = instRenderTab(instagramData);
+}
+
+window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+  if (!e.matches) return;
+  instagrammListEl.innerHTML = "";
+  instChangeSizeTab();
+});
+window.matchMedia("(max-width: 767px)").addEventListener("change", (e) => {
+  if (!e.matches) return;
+  instagrammListEl.innerHTML = "";
+  instChangeSizeMob();
+});
