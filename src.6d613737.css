@@ -1,0 +1,1475 @@
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  background-color: #ffffff;
+  color: #697687;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+.btn {
+  min-width: 80px;
+  padding: 10px 12px;
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+  color: #ffffff;
+  background-color: #3685fb;
+}
+.btn:hover, .btnfocus {
+  background-color: #00b3a0;
+}
+@media screen and (min-width: 480px) {
+  .btn {
+    min-width: 100px;
+    padding: 13px 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn {
+    min-width: 120px;
+    padding: 16px 29px;
+  }
+}
+
+.header {
+  background-color: #f8f8f8;
+}
+
+.header__container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .nav {
+    order: 1;
+    margin: 15px auto 0;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: 1280px) {
+  .logo {
+    font-size: 25px;
+  }
+}
+
+.logo__1 {
+  color: #3685fb;
+}
+
+.logo__2 {
+  margin-right: 3px;
+  color: #002248;
+}
+
+.logo__3 {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: #00b3a0;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav__link {
+  line-height: 1.13;
+  color: #002248;
+}
+.nav__link--active {
+  color: #3685fb;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #3685fb;
+}
+
+.mob-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #3685fb;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu__open {
+  display: none;
+  stroke: #3685fb;
+}
+.mob-menu__open.visible {
+  display: block;
+}
+
+.mob-menu__close {
+  display: none;
+  stroke: #3685fb;
+}
+.mob-menu__close.visible {
+  display: block;
+}
+
+.mob-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 100vh;
+  transform: translateY(-100%);
+  background-color: #f8f8f8;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.mob-nav.open {
+  transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .mob-nav {
+    display: none;
+  }
+}
+
+.mob-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+  padding: 120px 50px;
+}
+
+.mob-nav__link {
+  line-height: 1.13;
+  color: #002248;
+}
+.mob-nav__link--active {
+  color: #3685fb;
+}
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: #3685fb;
+}
+
+.hero {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 180px;
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__container {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+.hero__thumb {
+  border: 10px solid #ffffff;
+  border-radius: 570px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .hero__thumb {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.hero__thumb--pool {
+  position: absolute;
+  right: -25%;
+  bottom: -10%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__thumb--pool {
+    display: block;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__thumb--pool {
+    right: -2%;
+    bottom: -5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__thumb--mountains {
+    display: block;
+    width: 380px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__thumb--mountains {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .hero__description {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero .hero__description {
+    text-align: center;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  color: #002248;
+}
+
+.hero__text {
+  margin-bottom: 50px;
+}
+
+.booking {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 40px 30px 0px rgba(0, 34, 72, 0.07);
+  box-shadow: 0px 40px 40px -10px rgba(0, 34, 72, 0.07);
+}
+@media screen and (max-width: 767px) {
+  .booking {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    width: 90%;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .booking {
+    width: 70%;
+  }
+}
+
+.booking-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .booking-list {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking-list {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .booking-list {
+    margin-left: 70px;
+  }
+}
+
+.booking-list__item {
+  display: inline-flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .booking-list__item {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+.booking-list__label {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #002248;
+}
+.booking-list__label::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 16px;
+  height: 16px;
+  background-image: url(/ex.Tripgoal/chevron-down.b461b39d.svg);
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .booking-list__label::before {
+    right: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking-list__label::before {
+    right: -30px;
+  }
+}
+
+.booking-list__select {
+  appearance: none;
+  border: none;
+  color: #697687;
+  background-color: #ffffff;
+}
+
+.booking__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  color: #ffffff;
+  background-color: #3685fb;
+}
+@media screen and (max-width: 767px) {
+  .booking__btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking__btn {
+    min-width: 150px;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.booking__btn-svg {
+  margin-bottom: 15px;
+  fill: #ffffff;
+}
+
+.booking__btn-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.find-travel {
+  padding-top: 190px;
+  padding-bottom: 120px;
+}
+
+.find-travel__wrapper {
+  text-align: center;
+}
+
+.find-travel__subtitle {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.find-travel__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 42px;
+  line-height: 1.24;
+  color: #002248;
+}
+
+.find-travel__text {
+  margin: 0 auto 70px;
+}
+@media screen and (min-width: 768px) {
+  .find-travel__text {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .steps {
+    grid-template-areas: "f f f f i i i i" "b b b b b b b b";
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .steps {
+    display: grid;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .steps {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+  }
+}
+
+.steps__item {
+  display: grid;
+  grid-template-rows: 115px 1fr 1fr;
+  align-items: stretch;
+  justify-items: center;
+  padding: 40px 20px 45px;
+  border: 2px solid #f8f8f8;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .steps__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .steps__item:first-child {
+    grid-area: f;
+  }
+  .steps__item:nth-child(2) {
+    grid-area: i;
+  }
+  .steps__item:last-child {
+    grid-area: b;
+  }
+}
+.steps__title {
+  align-self: baseline;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #002248;
+}
+
+.steps__description {
+  padding-top: 20px;
+}
+
+.sug-loc {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f8f8;
+}
+
+.sug-loc__wrapper {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1280px) {
+  .sug-loc__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .sug-loc__description {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sug-loc__description {
+    width: 530px;
+  }
+}
+
+.sug-loc__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.sug-loc__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 42px;
+  line-height: 1.24;
+  color: #002248;
+}
+
+.sug-loc__buttons {
+  align-self: flex-end;
+}
+
+.sug-loc__btn {
+  width: 50px;
+  max-width: 50px;
+  min-width: 0;
+  height: 50px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: #002248;
+  background-color: #ffffff;
+}
+.sug-loc__btn:not(:last-child) {
+  margin-right: 10px;
+}
+.sug-loc__btn--active {
+  fill: #ffffff;
+  background-color: #3685fb;
+}
+
+@media screen and (min-width: 1280px) {
+  .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.location__item {
+  position: relative;
+  display: block;
+}
+.location__item:first-child .location__wrapper {
+  background-color: rgba(101, 106, 30, 0.3);
+}
+@media screen and (max-width: 1279px) {
+  .location__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .location__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.location__img {
+  border: 6px solid #ffffff;
+  border-radius: 15px;
+}
+@media screen and (max-width: 1279px) {
+  .location__img {
+    margin: 0 auto;
+  }
+}
+
+.location__wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #989898;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 34, 72, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .location__wrapper {
+    width: 80%;
+  }
+}
+
+.loc-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.loc-meta__title {
+  font-weight: 400;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.loc-meta__country {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.loc-meta__price {
+  font-family: "BioRhyme", serif;
+  font-size: 15px;
+  text-align: end;
+  color: #ffffff;
+}
+
+.guideline {
+  position: relative;
+  display: none;
+  height: 690px;
+  background: url("/ex.Tripgoal/map.adc9c27f.svg") no-repeat 50%, url("/ex.Tripgoal/travel-guideline.7e02cd10.jpg") no-repeat;
+}
+@media screen and (min-width: 1280px) {
+  .guideline {
+    display: block;
+  }
+}
+
+.guideline__container {
+  padding-top: 175px;
+}
+
+.guideline__wrapper {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .guideline__wrapper {
+    width: 440px;
+  }
+}
+
+.guideline__subtitle {
+  margin-bottom: 10px;
+  color: #00b3a0;
+}
+
+.guideline__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 42px;
+  line-height: 1.24;
+  color: #002248;
+}
+
+.guideline__description {
+  margin-bottom: 50px;
+}
+
+.perfect-place__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media screen and (min-width: 768px) {
+  .perfect-place__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .perfect-place__description {
+    width: 450px;
+  }
+}
+
+.perfect-place__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.perfect-place__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 30px;
+  line-height: 1.24;
+  color: #002248;
+}
+
+.perfect-place__text {
+  margin-bottom: 50px;
+}
+
+.statistics {
+  display: flex;
+  gap: 15px;
+}
+.statistics:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+  .statistics {
+    justify-content: center;
+  }
+}
+
+.statistics__item {
+  min-width: 120px;
+  max-width: 120px;
+  min-height: 130px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f8f8f8;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .statistics__item {
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
+
+.statistics__value {
+  font-family: "BioRhyme", serif;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #3685fb;
+}
+
+.statistics__title {
+  font-size: 13px;
+  font-weight: 400;
+  color: #002248;
+}
+@media screen and (min-width: 768px) {
+  .statistics__title {
+    font-size: 16px;
+  }
+}
+
+.perfect-place__wrapper {
+  position: relative;
+}
+
+.perfect-place__thumb {
+  border: 10px solid #ffffff;
+  border-radius: 570px;
+  overflow: hidden;
+}
+.perfect-place__thumb--room {
+  display: none;
+  position: absolute;
+  left: -40%;
+  bottom: -5%;
+  width: 320px;
+}
+@media screen and (min-width: 1280px) {
+  .perfect-place__thumb--room {
+    display: block;
+  }
+}
+.perfect-place__thumb--city {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .perfect-place__thumb--city {
+    display: block;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .perfect-place__thumb--city {
+    width: 400px;
+  }
+}
+
+.testimonials {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f8f8;
+}
+
+.testimonials__description {
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .testimonials__description {
+    width: 590px;
+    margin: 0 auto;
+  }
+}
+
+.testimonials__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.testimonials__title {
+  margin-bottom: 20px;
+  font-family: "BioRhyme", serif;
+  font-size: 30px;
+  line-height: 1.24;
+  color: #3685fb;
+}
+
+.testimonials__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 550px;
+  background-image: url("/ex.Tripgoal/map-world.28bf67ae.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+}
+
+.participants {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .participants {
+    display: block;
+  }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.review__svg {
+  margin-bottom: 20px;
+  fill: #3685fb;
+}
+
+.review__text {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.review__title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #002248;
+}
+
+.review__position {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.participants__item {
+  display: inline-flex;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffffff;
+}
+
+.participants__item:first-child {
+  position: relative;
+  top: 5%;
+  left: 45%;
+  transform: translate(0, 0);
+}
+
+.participants__item:nth-child(2) {
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+.participants__item:nth-child(3) {
+  position: relative;
+  top: 30%;
+  left: 1%;
+}
+
+.participants__item:nth-child(4) {
+  position: relative;
+  top: 45%;
+  left: -15%;
+}
+
+.participants__item:nth-child(5) {
+  position: relative;
+  top: 65%;
+  left: -7%;
+}
+
+.participants__item:nth-child(6) {
+  position: relative;
+  top: 10%;
+  right: -40%;
+}
+
+.participants__item:nth-child(7) {
+  position: relative;
+  top: 30%;
+  right: -40%;
+}
+
+.participants__item:nth-child(8) {
+  position: relative;
+  top: 60%;
+  right: -30%;
+}
+
+.instagramm {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.instagramm__container {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .instagramm__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.instagramm__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.instagramm__title {
+  font-family: "BioRhyme", serif;
+  font-size: 30px;
+  line-height: 1.24;
+  color: #002248;
+}
+
+@media screen and (min-width: 768px) {
+  .instagram__wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .instagram__wrapper {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .instagramm__list {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: -10%;
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instagramm__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .instagramm__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.instagramm__item:nth-child(2n) {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.instagramm__item:nth-child(2n+1) {
+  border-radius: 570px;
+  overflow: hidden;
+}
+
+.instagramm__img:first-child {
+  width: 385px;
+}
+@media screen and (max-width: 767px) {
+  .instagramm__img {
+    margin: 0 auto;
+  }
+}
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.contact__wrapper {
+  height: 400px;
+  padding: 10px;
+  border-radius: 40px;
+  background-image: url(/ex.Tripgoal/contact-us.8f8be44c.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #f3f8ff;
+}
+@media screen and (max-width: 1279px) {
+  .contact__wrapper {
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__wrapper {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    padding: 70px 80px;
+    background-position: right 50px bottom;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .contact__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.contact__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.13;
+  color: #00b3a0;
+}
+
+.contact__title {
+  margin-bottom: 30px;
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  line-height: 1.24;
+  color: #ffffff;
+}
+@media screen and (max-width: 1279px) {
+  .contact__title {
+    text-align: center;
+    text-shadow: 1px 1px 1px #002248;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__title {
+    color: #002248;
+  }
+}
+
+.footer__nav {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .footer__nav {
+    display: block;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #697687;
+  border-radius: 50%;
+}
+.social__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social__link {
+  display: flex;
+  padding: 10px;
+}
+.social__link:hover .social__svg, .social__link:focus .social__svg {
+  fill: #00b3a0;
+}
+
+.social__svg {
+  fill: #697687;
+}
+
+.copyright {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.copyright::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: rgba(104, 118, 135, 0.0980392157);
+}
+
+.copyright__text {
+  text-align: center;
+}
+
+/*# sourceMappingURL=/ex.Tripgoal/src.6d613737.css.map */
