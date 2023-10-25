@@ -1,27 +1,28 @@
-import img from "../image/travel-perfection/*.svg";
+// import img from "../image/travel-perfection/*.svg";
 
-const keyImg = Object.keys(img);
+// const keyImg = Object.keys(img);
 
-let descrImg = [
-  {
-    title: "Share your travel preference",
-    descr: " It all happends online,We recommend everything to your vision",
-  },
-  {
-    title: "Tell us what you want to do",
-    descr: "Fill out a 2-minute questionnaire about how you like to travel",
-  },
+// let descrImg = [
+//   {
+//     title: "Share your travel preference",
+//     descr: " It all happends online,We recommend everything to your vision",
+//   },
+//   {
+//     title: "Tell us what you want to do",
+//     descr: "Fill out a 2-minute questionnaire about how you like to travel",
+//   },
 
-  {
-    title: `We’ll give you recommendations`,
-    descr:
-      "Once you’re happy with your final plan, We handle everything for you",
-  },
-];
+//   {
+//     title: `We’ll give you recommendations`,
+//     descr:
+//       "Once you’re happy with your final plan, We handle everything for you",
+//   },
+// ];
 
-descrImg = [...descrImg].map((el, i) => {
-  return { ...el, src: img[keyImg[i]], alt: keyImg[i] };
-});
+// descrImg = [...descrImg].map((el, i) => {
+//   return { ...el, src: img[keyImg[i]], alt: keyImg[i] };
+// });
+import { descrImg } from "./find_travelData";
 
 const stepsEl = document.querySelector(".steps");
 
