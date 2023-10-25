@@ -29,7 +29,7 @@
     width: 550px;
   }
 }
-.steps {
+.steps__list {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     grid-template-areas:
       "f f f f i i i i"
