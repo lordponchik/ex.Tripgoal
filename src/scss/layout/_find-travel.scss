@@ -70,7 +70,11 @@
     grid-area: b;
   }
 }
-
+.steps__img {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
 .steps__title {
   align-self: baseline;
   padding-top: 50px;

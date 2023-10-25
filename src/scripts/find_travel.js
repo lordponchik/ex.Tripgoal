@@ -8,6 +8,8 @@ const stepsEl = document.querySelector(".steps");
 
 if (window.innerWidth >= 768) {
   stepsRenderTab();
+} else if (window.innerWidth < 768) {
+  stepsRenderMob();
 }
 
 function stepsRenderMob() {
@@ -16,6 +18,20 @@ function stepsRenderMob() {
    <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
   </div>`;
+
+  const swiperEl = document.querySelector(".swiper-wrapper");
+
+  swiperEl.innerHTML = stepsMobData(descrImg);
+
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation],
+    direction: "horizontal",
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }
 function stepsRenderTab() {
   const stepsListEl = document.createElement("ul");
@@ -25,7 +41,7 @@ function stepsRenderTab() {
   stepsListEl.innerHTML = stepsTabData(descrImg);
 }
 
-function stepsTabData(descr) {
+function stepsMobData(descr) {
   return descr
     .map(({ src, alt, title, descr }) => {
       return `<div class="swiper-slide">
@@ -43,7 +59,7 @@ function stepsTabData(descr) {
     })
     .join("");
 }
-function stepsMobData(descr) {
+function stepsTabData(descr) {
   return descr
     .map(({ src, alt, title, descr }) => {
       return `<li class="steps__item">
@@ -61,3 +77,18 @@ function stepsMobData(descr) {
     })
     .join("");
 }
+
+window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+  if (!e.matches) return;
+
+  stepsEl.innerHTML = "";
+
+  stepsRenderTab();
+});
+window.matchMedia("(max-width: 767px)").addEventListener("change", (e) => {
+  if (!e.matches) return;
+
+  stepsEl.innerHTML = "";
+
+  stepsRenderMob();
+});
