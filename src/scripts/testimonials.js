@@ -41,17 +41,25 @@ function renderBlockForDesktop() {
                 <h3 class="review__title">${reviewsData[0].name}</h3>
                 <p class="review__position">${reviewsData[0].activity}</p>`;
 
+  let prev = participantsEl.firstChild;
+  prev.classList.add("active");
+
   participantsEl.addEventListener("click", (e) => {
     if (e.target.nodeName !== "IMG") return;
+
+    prev.classList.remove("active");
+    e.target.parentNode.classList.add("active");
+    prev = e.target.parentNode;
+
     const altName = e.target.getAttribute("alt");
 
     const pos = reviewsData.findIndex((option) => option.alt === altName);
 
     descrEl.innerHTML = "";
     descrEl.innerHTML = ` <p class="review__text">
-                 ${reviewsData[pos].review}
-                </p>
-                <h3 class="review__title">${reviewsData[pos].name}</h3>
-                <p class="review__position">${reviewsData[pos].activity}</p>`;
+                   ${reviewsData[pos].review}
+                  </p>
+                  <h3 class="review__title">${reviewsData[pos].name}</h3>
+                  <p class="review__position">${reviewsData[pos].activity}</p>`;
   });
 }

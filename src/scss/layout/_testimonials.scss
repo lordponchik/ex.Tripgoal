@@ -88,6 +88,11 @@
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid $primary-background-color;
+  cursor: pointer;
+
+  &.active {
+    border: 3px solid $secondary-accent-color;
+  }
 }
 .participants__item:first-child {
   position: relative;
