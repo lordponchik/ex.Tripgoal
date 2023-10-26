@@ -1,3 +1,29 @@
 import { reviewsData } from "./testimonialsData";
 
-const rev = reviewsData();
+const svgQuotation = `<svg id="icon-quotation" width="30" height="30" class="review__svg" viewBox="0 0 32 32">
+<path d="M0 17.687h8.375v2.443c0 1.396-1.136 2.531-2.531 2.531h-3.219v6.25h3.219c4.842 0 8.781-3.939 8.781-8.781v-17.068h-14.625v14.625z"></path>
+<path d="M17.375 3.063v14.625h8.375v2.443c0 1.396-1.135 2.531-2.531 2.531h-3.219v6.25h3.219c4.842 0 8.781-3.939 8.781-8.781v-17.068h-14.625z"></path>
+</svg>`;
+
+const testimonialsWrapperEl = document.querySelector(".testimonials__wrapper");
+
+testimonialsWrapperEl.innerHTML = `<ul class="participants list"></ul>
+            <div class="review">
+              ${svgQuotation}
+              <div class="review__description">
+              </div>
+            </div>`;
+
+const participantsEl = document.querySelector(".participants");
+
+participantsEl.innerHTML = renderFoto(reviewsData);
+
+function renderFoto(reviewData) {
+  return reviewData
+    .map(({ src, alt }) => {
+      return `<li class="participants__item">
+                <img src="${src}" alt="${alt}" />
+              </li>`;
+    })
+    .join("");
+}
