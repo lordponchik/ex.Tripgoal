@@ -7,23 +7,51 @@ const svgQuotation = `<svg id="icon-quotation" width="30" height="30" class="rev
 
 const testimonialsWrapperEl = document.querySelector(".testimonials__wrapper");
 
-testimonialsWrapperEl.innerHTML = `<ul class="participants list"></ul>
+if (innerWidth >= 1280) {
+  renderBlockForDesktop();
+}
+
+function renderBlockForDesktop() {
+  testimonialsWrapperEl.innerHTML = `<ul class="participants list"></ul>
             <div class="review">
               ${svgQuotation}
               <div class="review__description">
               </div>
             </div>`;
 
-const participantsEl = document.querySelector(".participants");
+  const participantsEl = document.querySelector(".participants");
 
-participantsEl.innerHTML = renderFoto(reviewsData);
+  participantsEl.innerHTML = renderFoto(reviewsData);
 
-function renderFoto(reviewData) {
-  return reviewData
-    .map(({ src, alt }) => {
-      return `<li class="participants__item">
+  function renderFoto(reviewData) {
+    return reviewData
+      .map(({ src, alt }) => {
+        return `<li class="participants__item">
                 <img src="${src}" alt="${alt}" />
               </li>`;
-    })
-    .join("");
+      })
+      .join("");
+  }
+
+  const descrEl = document.querySelector(".review__description");
+
+  descrEl.innerHTML = ` <p class="review__text">
+                 ${reviewsData[0].review}
+                </p>
+                <h3 class="review__title">${reviewsData[0].name}</h3>
+                <p class="review__position">${reviewsData[0].activity}</p>`;
+
+  participantsEl.addEventListener("click", (e) => {
+    if (e.target.nodeName !== "IMG") return;
+    const altName = e.target.getAttribute("alt");
+
+    const pos = reviewsData.findIndex((option) => option.alt === altName);
+
+    descrEl.innerHTML = "";
+    descrEl.innerHTML = ` <p class="review__text">
+                 ${reviewsData[pos].review}
+                </p>
+                <h3 class="review__title">${reviewsData[pos].name}</h3>
+                <p class="review__position">${reviewsData[pos].activity}</p>`;
+  });
 }
