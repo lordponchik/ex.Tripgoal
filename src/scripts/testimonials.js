@@ -74,7 +74,7 @@ function renderBlockForDesktop() {
 }
 function renderBlockForMobTab() {
   testimonialsWrapperEl.innerHTML = `<div class="swiper">
-  <div class="swiper-wrapper"></div>
+  <div class="swiper-wrapper testimonials__swiper-wrapper"></div>
   <div class="swiper-scrollbar"></div>
   </div>`;
 
