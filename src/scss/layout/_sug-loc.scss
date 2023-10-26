@@ -38,6 +38,10 @@
 }
 .sug-loc__buttons {
   align-self: flex-end;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .sug-loc__btn {
   width: 50px;
@@ -57,7 +61,7 @@
   }
 }
 .location {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1279px) {
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -66,9 +70,9 @@
     position: relative;
     overflow: hidden;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -76,31 +80,33 @@
   position: absolute;
   display: block;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     position: relative;
   }
   &:first-child .location__wrapper {
     background-color: rgba($color: #656a1e, $alpha: 0.3);
   }
 
-  &--active {
-    z-index: 1;
-    transform: translateX(0);
+  @media screen and (max-width: 1279px) {
+    &--active {
+      z-index: 1;
+      transform: translateX(0);
 
-    &.nex {
-      animation: locNext 300ms cubic-bezier(0.42, 0.11, 0.54, 0.75) 1;
+      &.nex {
+        animation: locNext 300ms cubic-bezier(0.42, 0.11, 0.54, 0.75) 1;
+      }
+      &.prev {
+        animation: locPrev 300ms cubic-bezier(0.42, 0.11, 0.54, 0.75) 1;
+      }
     }
-    &.prev {
-      animation: locPrev 300ms cubic-bezier(0.42, 0.11, 0.54, 0.75) 1;
+    &--next {
+      opacity: 0;
+      transform: translateX(100%);
     }
-  }
-  &--next {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  &--previous {
-    opacity: 0;
-    transform: translateX(-100%);
+    &--previous {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
   }
   @media screen and (max-width: 1279px) {
     margin-bottom: 10px;
