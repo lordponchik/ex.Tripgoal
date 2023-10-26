@@ -12,13 +12,29 @@ let valueNext;
 let valueSubsequent;
 
 btnEl.nextEl.addEventListener("click", (e) => {
-  renderValueForNext();
+  renderValue();
+  addClassForNextBtn();
+  arrLocations[valueNext].classList.remove("prev");
+  arrLocations[valueNext].classList.add("nex");
+});
+btnEl.previousEl.addEventListener("click", (e) => {
+  renderValue();
+  addClassForPreviousBtn();
+  arrLocations[valuePrevious].classList.remove("nex");
+  arrLocations[valuePrevious].classList.add("prev");
+});
 
-  if (valueActive === locations.length - 1) {
-    e.currentTarget.setAttribute("disabled", "disabled");
-    return;
-  }
+function renderValue() {
+  valueActive = arrLocations.findIndex((el) =>
+    el.classList.contains("location__item--active")
+  );
 
+  valuePrevious = valueActive === 0 ? arrLocations.length - 1 : valueActive - 1;
+  valueNext = valueActive === arrLocations.length - 1 ? 0 : valueActive + 1;
+  valueSubsequent = valueNext === arrLocations.length - 1 ? 0 : valueNext + 1;
+}
+
+function addClassForNextBtn() {
   arrLocations[valueActive].classList.remove("location__item--active");
   arrLocations[valueActive].classList.add("location__item--previous");
 
@@ -28,14 +44,15 @@ btnEl.nextEl.addEventListener("click", (e) => {
   arrLocations[valueNext].classList.add("location__item--active");
 
   arrLocations[valueSubsequent].classList.add("location__item--next");
-});
+}
+function addClassForPreviousBtn() {
+  arrLocations[valueActive].classList.remove("location__item--active");
+  arrLocations[valueActive].classList.add("location__item--next");
 
-function renderValueForNext() {
-  valueActive = arrLocations.findIndex((el) =>
-    el.classList.contains("location__item--active")
-  );
+  arrLocations[valuePrevious].classList.remove("location__item--previous");
 
-  valuePrevious = valueActive === 0 ? arrLocations.length - 1 : valueActive - 1;
-  valueNext = valueActive === arrLocations.length - 1 ? 0 : valueActive + 1;
-  valueSubsequent = valueNext === arrLocations.length - 1 ? 0 : valueNext + 1;
+  arrLocations[valueNext].classList.remove("location__item--next");
+  arrLocations[valueNext].classList.add("location__item--previous");
+
+  arrLocations[valueSubsequent].classList.add("location__item--active");
 }
