@@ -1,9 +1,9 @@
 import { reviewsData } from "./testimonialsData";
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
 // import Swiper styles
 import "swiper/swiper-bundle.css";
-import "swiper/modules/pagination.css";
+import "swiper/modules/scrollbar.css";
 
 const svgQuotation = `<svg id="icon-quotation" width="30" height="30" class="review__svg" viewBox="0 0 32 32">
 <path d="M0 17.687h8.375v2.443c0 1.396-1.136 2.531-2.531 2.531h-3.219v6.25h3.219c4.842 0 8.781-3.939 8.781-8.781v-17.068h-14.625v14.625z"></path>
@@ -75,25 +75,25 @@ function renderBlockForDesktop() {
 function renderBlockForMobTab() {
   testimonialsWrapperEl.innerHTML = `<div class="swiper">
   <div class="swiper-wrapper"></div>
-  <div class="swiper-pagination"></div>
+  <div class="swiper-scrollbar"></div>
   </div>`;
+
+  const swiper = new Swiper(".swiper", {
+    modules: [Scrollbar],
+    direction: "horizontal",
+    loop: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
 
   const swiperEl = testimonialsWrapperEl.querySelector(".swiper-wrapper");
 
   swiperEl.innerHTML = sleidsReviews(reviewsData);
 
-  const swiper = new Swiper(".swiper", {
-    modules: [Pagination],
-    direction: "horizontal",
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-
   function sleidsReviews(reviewsData) {
     return reviewsData
-      .map(({ name, alt, src, review, activity }) => {
+      .map(({ name, review, activity }) => {
         return `<div class="swiper-slide">
                <div class="review__description">
                ${svgQuotation}
