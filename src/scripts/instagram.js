@@ -37,7 +37,7 @@ function instRenderMob(data) {
               <img
                 src="${name}"
                 alt="${alt}"
-                class="swiper__img"
+                class="swiper__img instagramm__img"
                 height="300"
                 width="400"
               />
