@@ -61,6 +61,14 @@
   }
 }
 .location {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
@@ -68,13 +76,25 @@
   }
 }
 .location__item {
-  position: relative;
+  position: absolute;
   display: block;
 
   &:first-child .location__wrapper {
     background-color: rgba($color: #656a1e, $alpha: 0.3);
   }
 
+  &--active {
+    z-index: 1;
+    transform: translateX(0);
+  }
+  &--next {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  &--previous {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
   @media screen and (max-width: 1279px) {
     margin-bottom: 10px;
   }
