@@ -44,7 +44,9 @@ function renderBlockForDesktop() {
   let prev = participantsEl.firstChild;
   prev.classList.add("active");
 
-  participantsEl.addEventListener("click", (e) => {
+  participantsEl.addEventListener("click", renderSelectedReview);
+
+  function renderSelectedReview(e) {
     if (e.target.nodeName !== "IMG") return;
 
     prev.classList.remove("active");
@@ -61,5 +63,5 @@ function renderBlockForDesktop() {
                   </p>
                   <h3 class="review__title">${reviewsData[pos].name}</h3>
                   <p class="review__position">${reviewsData[pos].activity}</p>`;
-  });
+  }
 }
