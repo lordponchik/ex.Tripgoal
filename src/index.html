@@ -177,15 +177,15 @@
               </p>
             </div>
             <div class="sug-loc__buttons">
-              <button type="button" class="btn sug-loc__btn">
+              <button
+                type="button"
+                class="btn sug-loc__btn sug-loc__btn--previous"
+              >
                 <svg width="15" height="25">
                   <use href="./image/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </button>
-              <button
-                type="button"
-                class="btn sug-loc__btn sug-loc__btn--active"
-              >
+              <button type="button" class="btn sug-loc__btn sug-loc__btn--next">
                 <svg width="15" height="25">
                   <use href="./image/sprite.svg#icon-arrow-right"></use>
                 </svg>
@@ -193,7 +193,7 @@
             </div>
           </div>
           <ul class="location list">
-            <li class="location__item">
+            <li class="location__item location__item--active">
               <a href="" class="location__link link"
                 ><img
                   src="./image/suggested-location/bali-handara-gate.jpg"
@@ -236,7 +236,7 @@
                 </div>
               </a>
             </li>
-            <li class="location__item">
+            <li class="location__item location__item--next">
               <a href="" class="location__link link"
                 ><img
                   src="./image/suggested-location/buddhist-shrine.jpg"
