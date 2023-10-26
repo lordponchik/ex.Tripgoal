@@ -81,7 +81,7 @@ function renderBlockForMobTab() {
   const swiper = new Swiper(".swiper", {
     modules: [Scrollbar],
     direction: "horizontal",
-    loop: true,
+    loop: false,
     scrollbar: {
       el: ".swiper-scrollbar",
     },
