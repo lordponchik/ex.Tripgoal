@@ -31,31 +31,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  font-size: 20px;
-  font-weight: 500;
 
-  @media screen and (min-width: 1280px) {
-    font-size: 25px;
-  }
-}
-.logo__1 {
-  color: $primary-accent-color;
-}
-.logo__2 {
-  margin-right: 3px;
-
-  color: $header-color;
-}
-.logo__3 {
-  content: "";
-  width: 8px;
-  height: 8px;
-  display: inline-flex;
-  border-radius: 50%;
-
-  background-color: $secondary-accent-color;
-}
 .nav__item:not(:last-child) {
   margin-right: 40px;
 }
