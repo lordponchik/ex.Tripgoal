@@ -63,6 +63,7 @@
   line-height: 1.13;
 
   color: $header-color;
+  transition: color 250ms cubic-bezier(0.23, 1, 0.32, 1);
 
   &--active {
     color: $primary-accent-color;
@@ -142,6 +143,7 @@
   line-height: 1.13;
 
   color: $header-color;
+  transition: color 250ms cubic-bezier(0.23, 1, 0.32, 1);
 
   &--active {
     color: $primary-accent-color;
