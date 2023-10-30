@@ -20,6 +20,7 @@ function instRenderTab(data) {
       return `<li class="instagramm__item">
               <img
                 src="${name}"
+                loading="lazy"
                 alt="${alt}"
                 class="instagramm__img"
                 height="300"
@@ -36,6 +37,7 @@ function instRenderMob(data) {
       return `<div class="swiper-slide">
               <img
                 src="${name}"
+                loading="lazy"
                 alt="${alt}"
                 class="swiper__img instagramm__img"
                 height="300"

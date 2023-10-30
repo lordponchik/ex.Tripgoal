@@ -47,6 +47,7 @@ function stepsMobData(descr) {
       return `<div class="swiper-slide">
               <img
                   src="${src}"
+                  loading="lazy"
                   alt="${alt}"
                   width="100"
                   class="steps__img"
@@ -65,6 +66,7 @@ function stepsTabData(descr) {
       return `<li class="steps__item">
                 <img
                   src="${src}"
+                  loading="lazy"
                   alt="${alt}"
                   width="100"
                   class="steps__img"

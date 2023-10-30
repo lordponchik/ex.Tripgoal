@@ -34,7 +34,7 @@ function renderBlockForDesktop() {
     return reviewData
       .map(({ src, alt }) => {
         return `<li class="participants__item">
-                <img src="${src}" alt="${alt}" />
+                <img src="${src}" alt="${alt}" loading="lazy"/>
               </li>`;
       })
       .join("");
