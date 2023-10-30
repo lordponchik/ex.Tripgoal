@@ -6,6 +6,11 @@ const documentEl = {
 };
 
 documentEl.mobMenuBtn.addEventListener("click", () => {
+  const mobExpandedAtr =
+    documentEl.mobMenuBtn.getAttribute("aria-expanded") === "true" || false;
+
+  documentEl.mobMenuBtn.setAttribute("aria-expanded", !mobExpandedAtr);
+
   documentEl.mobMenu.classList.toggle("open");
   documentEl.mobMenuOpenSVG.classList.toggle("visible");
   documentEl.mobMenuCloseSVG.classList.toggle("visible");
