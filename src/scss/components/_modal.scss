@@ -1,0 +1,48 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: $backdrop-color;
+}
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 35px;
+  transform: translate(-50%, -50%);
+
+  background-color: $primary-background-color;
+
+  @media screen and (min-width: 400px) {
+    width: 380px;
+    height: 380px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: 500px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+    height: 80vh;
+  }
+}
+.modal__btn {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 5px;
+  display: flex;
+  border-style: none;
+  fill: $primary-background-color;
+  background-color: $primary-accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-accent-color;
+  }
+}
