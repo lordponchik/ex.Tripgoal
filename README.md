@@ -15,7 +15,7 @@
 <img height="32" width="32" src="https://cdn.simpleicons.org/figma/##F24E1E" title="Figma"/>Design - [Figma layout](https://www.figma.com/file/OlmM3aNzcZp3LIzkqCSZVP/TripGoalLandingPage-u?type=design&node-id=1-10&mode=design&t=7CZWzfAL9X8IuQAy-0)
 
 ## Description
-This project is a practical work on the layout of HTML pages using CSS, SASS and JavaScript. The goal of the project is to improve the skills of responsive layout, styling with CSS and SASS, and interaction with the DOM via JavaScript.
+This project is a practical work on the layout of HTML pages using CSS, SASS and JavaScript. The goal of the project is to improve the skills of responsive layout, styling with CSS and SASS, and interaction with the DOM via JavaScript. Only the home page markup has been created.
 
 ## Technology stack
 
@@ -43,7 +43,7 @@ This project is a practical work on the layout of HTML pages using CSS, SASS and
 <img height="32" width="32" src="https://cdn.simpleicons.org/figma/##F24E1E" title="Figma"/>Дизайн - [макет Figma](https://www.figma.com/file/OlmM3aNzcZp3LIzkqCSZVP/TripGoalLandingPage-u?type=design&node-id=1-10&mode=design&t=7CZWzfAL9X8IuQAy-0)
 
 ## Опис
-Цей проект являє собою практичну роботу з верстки HTML-сторінок за допомогою CSS, SASS і JavaScript. Метою проекту є вдосконалення навичок адаптивної верстки, стилізації за допомогою CSS і SASS і взаємодії з DOM через JavaScript.
+Цей проект являє собою практичну роботу з верстки HTML-сторінок за допомогою CSS, SASS і JavaScript. Метою проекту є вдосконалення навичок адаптивної верстки, стилізації за допомогою CSS і SASS і взаємодії з DOM через JavaScript. Створено лише розмітку домашньої сторінки.
 
 ## Стек технологій
 <img height="32" width="32" src="https://cdn.simpleicons.org/html5/#E34F26" title="HTML5"/> <img height="32" width="32" src="https://cdn.simpleicons.org/css3/#1572B6" title="CSS3"/> <img height="32" width="32" src="https://cdn.simpleicons.org/sass/#CC6699" title="SASS"/> <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/#F7DF1E" title="JavaScript"/>
@@ -70,7 +70,7 @@ This project is a practical work on the layout of HTML pages using CSS, SASS and
 <img height="32" width="32" src="https://cdn.simpleicons.org/figma/##F24E1E" title="Figma"/>Дизайн - [макет Figma](https://www.figma.com/file/OlmM3aNzcZp3LIzkqCSZVP/TripGoalLandingPage-u?type=design&node-id=1-10&mode=design&t=7CZWzfAL9X8IuQAy-0)
 
 ## Описание
-Данный проект представляет собой практическую работу по верстке HTML-страниц с использованием CSS, SASS и JavaScript. Цель проекта — улучшить навыки адаптивной верстки, стилизации с помощью CSS и SASS, а также взаимодействия с DOM через JavaScript.
+Данный проект представляет собой практическую работу по верстке HTML-страниц с использованием CSS, SASS и JavaScript. Цель проекта — улучшить навыки адаптивной верстки, стилизации с помощью CSS и SASS, а также взаимодействия с DOM через JavaScript. Создана только разметка домашней страницы. 
 
 ## Стек технологий
 <img height="32" width="32" src="https://cdn.simpleicons.org/html5/#E34F26" title="HTML5"/> <img height="32" width="32" src="https://cdn.simpleicons.org/css3/#1572B6" title="CSS3"/> <img height="32" width="32" src="https://cdn.simpleicons.org/sass/#CC6699" title="SASS"/> <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/#F7DF1E" title="JavaScript"/>
